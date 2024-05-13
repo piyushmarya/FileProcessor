@@ -33,5 +33,4 @@ class DataProcessor:
         second_highest_salary = gross_salaries[1]
         average_salary = sum(gross_salaries) / len(gross_salaries)
 
-        footer = [["2nd Highest Salary", second_highest_salary], ["Average Salary", average_salary]]
-        return footer
+        return second_highest_salary, average_salary

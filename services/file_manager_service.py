@@ -68,7 +68,7 @@ class CsvOperations:
         try:
             with open(file_path, 'a', newline='') as file:
                 writer = csv.writer(file)
-                writer.writerows(data)
+                writer.writerow(data)
         except Exception as e:
             print("Error occured while appending to a CSV file")
             raise e

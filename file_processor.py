@@ -36,7 +36,8 @@ class FileProcessor:
             csv_writer = CsvOperations()
             csv_writer.write_csv_file(data_processor.data, headers, output_file_path)
 
-            footer = data_processor.get_second_highest_and_average_salary()
+            second_highest_salary, average_salary = data_processor.get_second_highest_and_average_salary()
+            footer = ['second_highest_salary = {}'.format(second_highest_salary), 'average_salary = {}'.format(average_salary) ,'','','','', '']
             csv_writer.append_to_csv(footer, output_file_path)
         except Exception as e:
             print(f"Error occured {e}")
