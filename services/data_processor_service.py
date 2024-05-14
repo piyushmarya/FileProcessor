@@ -33,4 +33,4 @@ class DataProcessor:
         second_highest_salary = gross_salaries[1]
         average_salary = sum(gross_salaries) / len(gross_salaries)
 
-        return second_highest_salary, average_salary
+        return second_highest_salary, round(average_salary, 1)
